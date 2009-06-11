@@ -1,0 +1,9 @@
+This LISP interpreter is programmed in Java. The interpreter runs in read-eval-print mode.
+
+AList.java: is the class that holds the association list details.  It is a linked list decorator class.
+
+DList.java: is the class that holds the definition list details.  Is is a linked list decorator class.
+
+SExp.java: is the class that holds S expression details, such as the implementation of the LISP primitives for mathematical operations, CONS, CDR, CAR, ATOM etc.  SExp also has the main input and output functions and some helper tokenizer functions.
+
+Interpreter.java: is the main class for the project.  The Lisp functions for eval, evlis, evcond, and apply are in this class along with helper methods.

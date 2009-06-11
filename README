@@ -1,0 +1,29 @@
+To compile:
+make
+
+To run:
+java Interpreter
+
+One oddity about my program:
+In trying the test case provided by Dr. S of 
+
+(DEFUN . (NOTSOSILLY . ((A . (B . NIL)) . ((COND . ( ( (EQ . (A . (0 . NIL))) . ( (PLUS . (B . (1 . NIL))) . NIL)) . ( ( (EQ . (B . (0 . NIL))) . ( (NOTSOSILLY . ((MINUS2 .(A . (1 . NIL))) . (1 . NIL))) . NIL)) . ( (T . ((NOTSOSILLY . ( (MINUS2 . (A . (1 . NIL))) . 
+                 ( (NOTSOSILLY . (A . ((MINUS2 . (B . (1 . NIL))) . NIL))) . NIL))) . NIL)) . NIL)))) . NIL))))
+                 
+If you copy and paste this on my home computer, but copying it does not work on stdsun. Multiline input is okay with my interpreter, but this particular case fails for copy and paste.
+
+The java implementation is a little weird on stdsun.
+
+For my program to run you need to have the most recent Java available on stdsun.
+To do this issue the subscribe command, and select to subscribe to the most recent JDK. Logout and log back in.
+Then issue the following commands:
+
+set path=( /usr/local/jdk1.5.0_06/bin ~/bin  $path  )
+
+These steps must be done prior to running make.
+
+The interpreter is NOT case sensitive.
+
+Input can be any legal Lisp form: either the list or dot notation.
+
+Output is in the dot notation. I have the functionality to output the list format, but it is not as thorough.
