@@ -31,17 +31,5 @@ public class DList
 		return null;
 	}
 
-	/**
-	* Used during debugging only
-	*/
-	public void Print()
-	{
-		Iterator itr = dl.listIterator();
-		while (itr.hasNext())	{
-			System.out.println(((SExp)itr.next()).ToStringDotNotation());
-			System.out.println();
-		}
-
-	}
 }
 
