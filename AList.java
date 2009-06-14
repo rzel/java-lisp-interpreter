@@ -16,7 +16,6 @@ public class AList
 
 	public AList(LinkedList<SExp> a)
 	{
-		al=new LinkedList<SExp>();
 		this.al=a;
 	}
 
